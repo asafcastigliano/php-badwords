@@ -25,10 +25,18 @@ $paragrafoCensurato = str_ireplace($parolaCensurata, '***', $paragrafo);
             <div class="col-12">
                 <div class="content">
                     <p>
-                        <?php
-
-                        echo "<p>".$paragrafoCensurato."</p>";
-                        
+                    <h1>
+                        Paragrafo originale
+                    </h1>
+                    <?php
+                            echo "<p>".$paragrafoCensurato."</p>";
+                            echo "Lunghezza: ".strlen($paragrafo);
+                        ?>
+                    <h1>
+                        Paragrafo censurato
+                    </h1>
+                    <?php
+                            echo "<p>".$paragrafo."</p>";
                         ?>
                     </p>
                 </div>
